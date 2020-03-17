@@ -2,6 +2,13 @@ html {
     height: 100%;
 }
 
+header {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
 body {
     background: #3399ff;
     height: 100%;
