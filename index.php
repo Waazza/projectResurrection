@@ -15,7 +15,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>HELLO ANA</h1>
+
+<div class="container-fluid h-100">
+        <div class="row h-100">
+            <div class="col-md-12 h-100 bg-color">
+                <?php include_once ('app/router.php'); ?>
+            </div>
+        </div>
+    </div>
 
 
 

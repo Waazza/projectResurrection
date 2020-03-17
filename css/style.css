@@ -1,0 +1,39 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: #3399ff;
+    height: 100%;
+}
+
+.bg-color {
+    background: linear-gradient(to bottom right, #b3d9ff , #0066cc);
+}
+
+.signin {
+    justify-content: center !important;
+    height: 100%;
+}
+
+.form-signin {
+    margin-top: 5%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.form-signin > h1 {
+    margin-bottom: 20px;
+}
+
+#inputEmail {
+    margin: 10px 0;
+}
+
+#inputPassword {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
