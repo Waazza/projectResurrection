@@ -16,8 +16,16 @@
 </head>
 <body>
 
-<header>
-    <h1>test</h1>
+<header class="d-flex">
+    <img src="img/logo.png" alt="logo" class="logo">
+    <nav class="menu">
+        <ul class="d-flex nav">
+            <li>Accueil</li>
+            <li>something</li>
+            <li>something</li>
+            <li>Gestion des utilisateurs</li>
+        </ul>
+    </nav>
 </header>
 
 <div class="container-fluid h-100">
