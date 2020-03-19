@@ -1,6 +1,17 @@
-<?php require_once 'app/include.php'; ?>
-<?php session_start() ?>
-<?php ob_start(); ?>
+<?php
+    require_once 'app/include.php';
+    session_start();
+    ob_start();
+
+
+
+    if( $_SERVER['REQUEST_URI'] != '/index.php?id=2'){
+       if( !isset($_SESSION['admin']) || !isset($_SESSION['member'])){
+           header("Location: index.php?id=2");
+       }
+  }
+
+?>
 
 <!doctype html>
 <html lang="en">

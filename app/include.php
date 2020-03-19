@@ -18,9 +18,8 @@ $arr_content[3]='users';
  * Treatments
  */
 
-$arr_content[100]='inscription';
-// $arr_content[101]='admin_redaction';
-$arr_content[102]='connexion';
+$arr_content[100]='userEdit';
+$arr_content[101]='connection';
 $arr_content[103]='deconnexion';
 $arr_content[104]='commentaire';
 $arr_content[105]='admin_redaction';
