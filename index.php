@@ -20,10 +20,10 @@
     <img src="img/logo.png" alt="logo" class="logo">
     <nav class="menu">
         <ul class="d-flex nav">
-            <li>Accueil</li>
+            <li><a href="index.php?id=1">Accueil</a></li>
             <li>something</li>
             <li>something</li>
-            <li>Gestion des utilisateurs</li>
+            <li><a href="index.php?id=3">Gestion des utilisateurs</a></li>
         </ul>
     </nav>
 </header>

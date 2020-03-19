@@ -9,6 +9,7 @@ require_once 'toolbox.inc.php';
 
 $arr_content[1]='home';
 $arr_content[2]='login';
+$arr_content[3]='users';
 
 
 

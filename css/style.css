@@ -6,7 +6,6 @@ header {
     background-color: white;
     height: 100px;
     width: 100%;
-    position: fixed;
     z-index: 999;
     border-bottom: black solid 2px;
     align-items: center;
