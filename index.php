@@ -7,7 +7,7 @@
 
     if( $_SERVER['REQUEST_URI'] != '/index.php?id=2' && $_SERVER['REQUEST_URI'] != '/index.php?id=101'){
        if(!isset($_SESSION['role'])){
-           header("Location: index.php?id=2");
+           header('Location: index.php?id=2');
        }
     }
 

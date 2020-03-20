@@ -17,9 +17,9 @@
         $_SESSION['lastname'] = $result['u_lastname'];
         $_SESSION['email'] = $result['u_email'];
 
-        if($result['u_fk_roleID'] == '1'){
+        if($result['u_role'] == '1'){
             $_SESSION['role'] = 'admin';
-        }elseif($result['u_fk_roleID'] == '2'){
+        }elseif($result['u_role'] == '2'){
             $_SESSION['role'] = 'member';
         }
 

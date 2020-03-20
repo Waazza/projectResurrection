@@ -1,3 +1,6 @@
+<a href="index.php?id=4">Ajouter un utilisateur</a>
+
+
 <table class="table">
     <thead>
     <tr>
