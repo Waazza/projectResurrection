@@ -1,3 +1,24 @@
+<?php
+
+if(isset($_GET['message'])){
+
+    if($_GET['message']==1){
+        echo '<div class="alert alert-danger text-center" role="alert">';
+        echo $arr_message[$_GET['message']];
+        echo '</div>';
+    }elseif($_GET['message']==2){
+        echo '<div class="alert alert-danger text-center" role="alert">';
+        echo $arr_message[$_GET['message']];
+        echo '</div>';
+    }elseif($_GET['message']==3){
+        echo '<div class="alert alert-danger text-center" role="alert">';
+        echo $arr_message[$_GET['message']];
+        echo '</div>';
+    }
+}
+
+?>
+
 <form action="index.php?id=103" method="post">
     <div class="form-group">
         <label for="firstName">Prenom</label>
