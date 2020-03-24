@@ -15,6 +15,10 @@
         <label for="password">Mot de passe</label>
         <input type="password" class="form-control" name="password" id="inputPassword">
     </div>
+    <div class="form-group">
+        <label for="passwordConfirm">Confirmer votre mot de passe</label>
+        <input type="password" class="form-control" name="passwordConfirm" id="inputPasswordConfirm">
+    </div>
     <div>
         <label for="role">Role</label>
         <select name="role" class="form-control" id="role">

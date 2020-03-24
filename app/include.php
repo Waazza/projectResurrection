@@ -30,6 +30,6 @@ $arr_content[106]='admin_commentaires';
  * Messages
  */
 
-$arr_message[1]='Erreur connexion.';
-$arr_message[2]='Vous êtes inscrit.';
-$arr_message[3]='Erreur : l\'article n\'a pas pu être ajouté.';
+$arr_message[1]='Email déjà utilisé ou invalide';
+$arr_message[2]='Veuillez renseigner tout les champs.';
+$arr_message[3]='Erreur : les mots de passe ne correspondent pas';

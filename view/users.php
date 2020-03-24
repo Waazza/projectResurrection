@@ -17,9 +17,9 @@
 
     $user = displayUser();
     foreach ($user as $k=>$v){
-        if($v->u_fk_roleID == '1'){
+        if($v->u_role == '1'){
             $role = 'Admin';
-        }elseif($v->u_fk_roleID == '2'){
+        }elseif($v->u_role == '2'){
             $role = 'Membre';
         }
 
