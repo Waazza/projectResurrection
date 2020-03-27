@@ -11,6 +11,7 @@ $arr_content[1]='home';
 $arr_content[2]='login';
 $arr_content[3]='users';
 $arr_content[4]='addUser';
+$arr_content[5]='editUser';
 
 
 
@@ -19,11 +20,11 @@ $arr_content[4]='addUser';
  * Treatments
  */
 
-$arr_content[100]='userEdit';
+$arr_content[100]='';
 $arr_content[101]='connection';
 $arr_content[102]='deconnexion';
 $arr_content[103]='addUser';
-$arr_content[105]='admin_redaction';
+$arr_content[105]='editUser';
 $arr_content[106]='admin_commentaires';
 
 /**

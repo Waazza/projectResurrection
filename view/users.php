@@ -9,7 +9,7 @@
         <th scope="col">Nom</th>
         <th scope="col">Email</th>
         <th scope="col">Role</th>
-        <th scope="col">Options</th>
+        <th scope="col" colspan="3">Options</th>
     </tr>
     </thead>
     <tbody>
@@ -30,10 +30,9 @@
             <td>'. $v->u_lastname .'</td>
             <td>'. $v->u_email .'</td>
             <td>'. $role .'</td>
-            <td>
-                <a href="index.php?id=100&user_id='. $v->u_id .'">Modifier</a>
-                <a href="">Supprimer</a>
-            </td>
+            <td><a href="index.php?id=5&user_id='. $v->u_id .'">Modifier</a></td>
+            <td><a href="">Supprimer</a></td>
+            <td><a href="">Réinitialiser le mot de passe</a></td>
         </tr>';
     }
 ?>
