@@ -1,3 +1,12 @@
+<?php
+    if (isset($_SESSION['role'])){
+        if ($_SESSION['role'] != 'admin'){
+            $_SESSION['message'] = $arr_message[4];
+            header('Location: index.php?id=1');
+        }
+    }
+?>
+
 <a href="index.php?id=4">Ajouter un utilisateur</a>
 
 
@@ -31,12 +40,17 @@
             <td>'. $v->u_email .'</td>
             <td>'. $role .'</td>
             <td><a href="index.php?id=5&user_id='. $v->u_id .'">Modifier</a></td>
-            <td><a href="">Supprimer</a></td>
+            <td><a href="index.php?id=107&user_id='. $v->u_id .'" class="delButton" data-id=" '. $v->u_id .' ">Supprimer</a></td>
             <td><a href="">Réinitialiser le mot de passe</a></td>
         </tr>';
     }
 ?>
     </tbody>
 </table>
+<div id="displayDel" style ="display: none">
+    <p>Etes-vous sur de vouloir supprimer cet utilisateur</p>
+    <a href="index.php?id=3">Oui</a>
+    <a href="index.php?id=3">Non</a>
+</div>
 
 

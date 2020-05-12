@@ -3,12 +3,16 @@
     session_start();
     ob_start();
 
-
-
-    if( $_SERVER['REQUEST_URI'] != '/index.php?id=2' && $_SERVER['REQUEST_URI'] != '/index.php?id=101'){
+    if($_SERVER['REQUEST_URI'] != '/index.php?id=2' && $_SERVER['REQUEST_URI'] != '/index.php?id=101'){
        if(!isset($_SESSION['role'])){
            header('Location: index.php?id=2');
        }
+    }
+
+    if(isset($_SESSION['message'])){
+        echo '<div class="alert alert-danger text-center" role="alert">';
+        echo $arr_message[$_GET['message']];
+        echo '</div>';
     }
 
 ?>
@@ -25,20 +29,27 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Document</title>
 </head>
-<body>
-
 <header class="d-flex">
     <img src="img/logo.png" alt="logo" class="logo">
     <nav class="menu">
         <ul class="d-flex nav">
             <li><a href="index.php?id=1">Accueil</a></li>
-            <li>something</li>
-            <li>something</li>
+            <li>Entreprises</li>
+            <li>Clients</li>
             <li><a href="index.php?id=3">Gestion des utilisateurs</a></li>
         </ul>
     </nav>
+    <?php
+        if(isset($_SESSION['email'])) {
+            echo '<div class="text-center cst-disconnect pt-3">
+                       <a href="index.php?id=102">
+                            <button type="button" class="btn btn-danger cst-btn-connect">Deconnexion</button>
+                        </a>
+	              </div>';
+        }
+    ?>
 </header>
-
+<body>
 <div class="container-fluid h-100">
     <div class="row h-100">
         <div class="col-md-12 h-100 bg-color">
