@@ -26,6 +26,7 @@
         <select name="role" class="form-control" id="role">
             <option value="1" <?php $userData[0]->u_role == 1 ?: 'selected' ?>>Admin</option>
             <option value="2" <?php $userData[0]->u_role == 2 ?: 'selected' ?>>Membre</option>
+            <option value="3" <?php $userData[0]->u_role == 3 ?: 'selected' ?>>Stagiaire</option>
         </select>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>

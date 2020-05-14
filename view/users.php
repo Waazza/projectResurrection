@@ -30,6 +30,10 @@
             $role = 'Admin';
         }elseif($v->u_role == '2'){
             $role = 'Membre';
+        }elseif($v->u_role == '3'){
+            $role = 'Stagiaire';
+        }elseif($v->u_role == '4'){
+            $role = 'Inactive';
         }
 
         echo'
@@ -49,8 +53,8 @@
 </table>
 <div id="displayDel" style ="display: none">
     <p>Etes-vous sur de vouloir supprimer cet utilisateur</p>
-    <a href="index.php?id=3">Oui</a>
-    <a href="index.php?id=3">Non</a>
+    <a href="index.php?id=107" id="linkMod">Oui</a>
+    <a href="#" id="butNo">Non</a>
 </div>
 
 

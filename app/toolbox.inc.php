@@ -11,11 +11,12 @@ function displayUser($id=null){
     $co = dbConnect();
     $sql ='';
     if (is_null($id)){
-        $sql = $co->prepare('SELECT * FROM user');
+        $sql = $co->prepare('SELECT * FROM user WHERE u_role!=:role');
     }elseif (!is_null($id)){
-        $sql = $co->prepare('SELECT u_firstname, u_lastname, u_email, u_role FROM user WHERE u_id=:id');
+        $sql = $co->prepare('SELECT u_firstname, u_lastname, u_email, u_role FROM user WHERE u_id=:id AND u_role!=:role');
         $sql->bindValue(':id', $id, PDO::PARAM_INT);
     }
+    $sql->bindValue(':role', 4, PDO::PARAM_INT);
     $sql->execute();
     $result = $sql->fetchAll(PDO::FETCH_OBJ);
     return $result;
@@ -118,3 +119,20 @@ function editUser($id, $email, $firstName, $lastName, $role){
         header('Location: index.php?id=4&message=1');
     }
 }
+
+/**
+ * Delete user from DB
+ *
+ * @param int
+ *
+ * @return void redirection
+ */
+function deleteUser($id){
+    $co = dbConnect();
+    $request = $co->prepare('UPDATE user SET u_role=:role WHERE u_id=:id');
+    $request->bindValue(':id', $id, PDO::PARAM_INT);
+    $request->bindValue(':role', 4, PDO::PARAM_INT);
+    $request->execute();
+
+    header('Location: index.php?id=3');
+};

@@ -44,7 +44,8 @@ if(isset($_GET['message'])){
         <label for="role">Role</label>
         <select name="role" class="form-control" id="role">
             <option value="1">Admin</option>
-            <option value="2">Membre</option>
+            <option value="2">Technicien</option>
+            <option value="3">Stagiaire</option>
         </select>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
