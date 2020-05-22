@@ -9,11 +9,11 @@
        }
     }
 
-    if(isset($_SESSION['message'])){
-        echo '<div class="alert alert-danger text-center" role="alert">';
-        echo $arr_message[$_GET['message']];
-        echo '</div>';
-    }
+//    if(isset($_SESSION['message'])){
+//        echo '<div class="alert alert-danger text-center" role="alert">';
+//        echo $arr_message[$_GET['message']];
+//        echo '</div>';
+//    }
 
 ?>
 
@@ -30,22 +30,9 @@
     <title>Document</title>
 </head>
 <header class="d-flex">
-    <img src="img/logo.png" alt="logo" class="logo">
-    <nav class="menu">
-        <ul class="d-flex nav">
-            <li><a href="index.php?id=1">Accueil</a></li>
-            <li>Entreprises</li>
-            <li>Clients</li>
-            <li><a href="index.php?id=3">Gestion des utilisateurs</a></li>
-        </ul>
-    </nav>
     <?php
-        if(isset($_SESSION['email'])) {
-            echo '<div class="text-center cst-disconnect pt-3">
-                       <a href="index.php?id=102">
-                            <button type="button" class="btn btn-danger cst-btn-connect">Deconnexion</button>
-                        </a>
-	              </div>';
+        if($_SERVER['REQUEST_URI'] != '/index.php?id=2'){
+            include_once('view/header.php');
         }
     ?>
 </header>

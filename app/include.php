@@ -12,6 +12,7 @@ $arr_content[2]='login';
 $arr_content[3]='users';
 $arr_content[4]='addUser';
 $arr_content[5]='editUser';
+$arr_content[6]='companies';
 
 
 
